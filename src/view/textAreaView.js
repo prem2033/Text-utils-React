@@ -14,9 +14,7 @@ export function TextAreaView(props) {
         textDataUpdate("")
     }
     const copyText = () => {
-        var copyText = document.getElementById("myBox");
-        copyText.select();
-        navigator.clipboard.writeText(copyText.value)
+        navigator.clipboard.writeText(textData)
     }
     const [textData, textDataUpdate] = useState('');
     return (
